@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/space_4"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="@dimen/space_4"
+        app:cardCornerRadius="@dimen/space_8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_80">
+
+        <RelativeLayout
+            android:padding="@dimen/space_8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_alignStart="@id/text_reply"
+                android:id="@+id/user_reply"
+                android:text="Aidil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginStart="@dimen/space_4"
+                android:layout_toEndOf="@id/user_reply"
+                android:id="@+id/tanggal_reply"
+                android:text="11:05:09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_reply"
+                android:textSize="@dimen/font_h7_size"
+                android:layout_below="@id/tanggal_reply"
+                android:textColor="@color/tulisanHitam"
+                android:text="ini adalah chatting dari aku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

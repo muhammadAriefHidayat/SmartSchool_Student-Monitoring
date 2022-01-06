@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/biruMuda"
+    tools:context=".activity.AttendanceActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/toolbar_tanggal"
+        android:layout_marginBottom="@dimen/space_32"
+        android:layout_marginHorizontal="@dimen/space_32"
+        android:id="@+id/subject_cv"
+        app:cardCornerRadius="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_52">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/ninini"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="@color/birutua"
+                android:layout_marginTop="@dimen/space_4"
+                android:textSize="@dimen/font_title_size"
+                android:layout_centerHorizontal="true"
+                android:text="Attendance History"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Student"
+                android:layout_marginTop="@dimen/space_1"
+                android:textColor="@color/md_light_green_A700"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/ninini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_below="@+id/toolbar_tanggal"
+        android:paddingTop="@dimen/space_56"
+        android:paddingEnd="@dimen/space_16"
+        android:paddingStart="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_24"
+        android:background="@drawable/bakcground_top_round"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.applandeo.materialcalendarview.CalendarView
+            android:id="@+id/add_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="@dimen/space_4"
+            android:layout_below="@+id/add_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_60">
+
+            <TextView
+                android:padding="@dimen/space_8"
+                tools:text="hari ini anak anda tidak masuk"
+                android:id="@+id/presensi_calend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

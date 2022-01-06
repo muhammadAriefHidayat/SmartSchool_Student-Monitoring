@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:background="@color/biruMuda"
+        android:id="@+id/header_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_56"/>
+
+
+    <TextView
+        android:textColor="@color/md_white_1000"
+        android:textStyle="bold"
+        android:textSize="@dimen/font_title_size"
+        android:layout_marginTop="@dimen/space_16"
+        android:layout_centerHorizontal="true"
+        android:text="Tambah Topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/dialog_pencatatan_topic"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/header_dialog"
+        android:layout_marginHorizontal="@dimen/space_16"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="@dimen/space_8"
+        android:background="@drawable/rounded_edtx"
+        android:hint="Nama Topic"
+        android:inputType="text"
+        android:paddingStart="@dimen/space_16"/>
+
+
+    <EditText
+        android:id="@+id/dialog_pencatatan_dec"
+        android:paddingStart="@dimen/space_16"
+        android:hint="Desripsi Singkat"
+        android:inputType="text"
+        android:layout_marginVertical="@dimen/space_8"
+        android:layout_marginHorizontal="@dimen/space_16"
+        android:background="@drawable/rounded_edtx"
+        android:layout_below="@+id/dialog_pencatatan_topic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"/>
+
+
+    <Button
+        android:layout_below="@id/dialog_pencatatan_dec"
+        android:layout_marginTop="@dimen/space_12"
+        android:layout_marginHorizontal="@dimen/space_16"
+        android:textColor="@color/md_white_1000"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/space_16"
+        android:text="Simpan"
+        android:background="@drawable/bakcgroud_rounded_pink"
+        android:id="@+id/dialog_pencatatan_simpan"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"/>
+</RelativeLayout>

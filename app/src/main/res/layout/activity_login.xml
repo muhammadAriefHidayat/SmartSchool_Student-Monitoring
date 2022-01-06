@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+
+    <TextView
+        android:layout_above="@id/login_username_txt"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/font_h4_size"
+        android:layout_marginBottom="@dimen/space_32"
+        android:text="Login"
+        android:textColor="@color/md_blue_900"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/login_username_txt"
+        android:paddingStart="@dimen/space_24"
+        android:hint="Username"
+        android:inputType="text"
+        android:text=""
+        android:layout_marginVertical="@dimen/space_16"
+        android:background="@drawable/btn_lengkung_login"
+        android:layout_above="@+id/login_password_txt"
+        android:layout_marginHorizontal="@dimen/space_36"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_56"/>
+
+
+    <EditText
+        android:id="@+id/login_password_txt"
+        android:paddingEnd="@dimen/space_32"
+        android:layout_centerInParent="true"
+        android:paddingStart="@dimen/space_24"
+        tools:text=""
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/btn_lengkung_login"
+        android:layout_marginHorizontal="@dimen/space_36"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_56"/>
+
+    <RelativeLayout
+        android:id="@+id/login_relative"
+        android:layout_marginHorizontal="@dimen/space_32"
+        android:layout_marginTop="@dimen/space_28"
+        android:layout_below="@id/login_password_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:text="Remember me"
+            android:checked="true"
+            android:textColor="@color/md_blue_900"
+            android:textColorLink="@color/md_blue_900"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text="Forgot Password?"
+            android:onClick="login_forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space_32"
+        android:layout_marginHorizontal="@dimen/space_32"
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/space_20"
+        android:text="Login"
+        android:background="@drawable/btn_lengkung_login_blue"
+        android:id="@+id/login_signin_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_56"/>
+
+    <ProgressBar
+        android:id="@+id/login_progressbar"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

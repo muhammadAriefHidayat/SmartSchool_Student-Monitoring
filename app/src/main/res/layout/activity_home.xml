@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_home"
+    tools:context=".activity.HomeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <TextView
+        android:id="@+id/home_hello_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        android:layout_marginStart="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_16"
+        android:layout_marginEnd="@dimen/space_4"
+        android:fontFamily="@font/nunito_regular"
+        android:text="Helo"
+        android:textColor="@color/biruMuda"
+        android:textSize="@dimen/font_h5_size" />
+
+    <TextView
+        android:textSize="@dimen/font_h5_size"
+        android:textColor="@color/biruMuda"
+        android:id="@+id/home_name_txt"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_toEndOf="@id/home_hello_txt"
+        android:layout_alignTop="@id/home_hello_txt"
+        android:text="Rahmad!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:paddingHorizontal="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_2"
+        android:layout_below="@id/home_name_txt"
+        android:id="@+id/home_wellcomeback"
+        android:text="Welcome Back!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginHorizontal="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_16"
+        android:id="@+id/home_news_information"
+        android:textSize="@dimen/font_h6_size"
+        android:fontFamily="@font/nunito_semibold"
+        android:textColor="@color/birutua"
+        android:layout_below="@id/home_wellcomeback"
+        android:text="News &amp; information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TableRow
+        android:layout_marginHorizontal="@dimen/space_16"
+        android:layout_marginBottom="@dimen/space_8"
+        android:layout_below="@id/home_news_information"
+        android:id="@+id/hr1"
+        android:layout_width="@dimen/space_48"
+        android:layout_height="2dp"
+        android:background="@color/pink"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginHorizontal="@dimen/space_16"
+        android:layout_marginBottom="@dimen/space_32"
+        android:id="@+id/home_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hr1"
+        android:layout_marginTop="6dp"
+        android:scrollbars="vertical"/>
+
+    <ProgressBar
+        android:visibility="visible"
+        android:id="@+id/progresbar_homeberita"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:background="@color/biruMuda"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="@dimen/space_36"
+            android:src="@drawable/kind"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/userImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:id="@+id/menu_username"
+            android:layout_below="@id/userImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_black"
+            android:layout_marginTop="@dimen/space_8"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:text="Rahmad"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/font_h6_size"/>
+
+    <TextView
+        android:id="@+id/menu_kelas"
+        android:layout_below="@id/menu_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_regular"
+        android:text="Kelas 6A"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/font_title_size"/>
+
+
+    <RelativeLayout
+        android:background="@color/birutua"
+        android:layout_below="@+id/menu_kelas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/garis"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_40"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

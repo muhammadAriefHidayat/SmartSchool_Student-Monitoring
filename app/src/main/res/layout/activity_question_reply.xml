@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/biruMuda"
+    tools:context=".activity.QuestionReplyActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_reply"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/toolbar_reply"
+        android:layout_marginBottom="@dimen/space_32"
+        android:layout_marginHorizontal="@dimen/space_20"
+        android:id="@+id/subject_cv"
+        app:cardCornerRadius="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_52">
+
+        <RelativeLayout
+            android:paddingHorizontal="@dimen/space_32"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/questioncreate_tanggalTV"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="@color/birutua"
+                android:layout_marginTop="@dimen/space_4"
+                android:textSize="@dimen/font_title_size"
+                android:layout_centerHorizontal="true"
+                android:text="20 September 2020"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_below="@id/questioncreate_tanggalTV"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Status: "
+                    android:textColor="@color/md_light_green_A700"
+                    android:fontFamily="@font/nunito_regular"
+                    android:id="@+id/question_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:fontFamily="@font/nunito_bold"
+                    android:textStyle="bold"
+                    android:textColor="@color/md_light_green_A700"
+                    android:text="ACTIVED"
+                    android:id="@+id/question_statusvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/space_20"
+        android:paddingTop="@dimen/space_56"
+        android:layout_below="@+id/toolbar_reply"
+        android:paddingHorizontal="@dimen/space_20"
+        android:background="@drawable/bakcground_top_round"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Judul:"
+            android:id="@+id/questioncreate_judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/birutua"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="@dimen/font_h7_size"
+            android:text="Mengenai Aturan Sekolah"
+            android:layout_below="@id/questioncreate_judul"
+            android:id="@+id/questioncreate_judulvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/iniaja"
+            android:layout_marginTop="@dimen/space_16"
+            android:id="@+id/refres_reply"
+            android:layout_below="@id/questioncreate_judulvalue">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/questionstatus_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <RelativeLayout
+            android:id="@+id/iniaja"
+            android:layout_marginBottom="@dimen/space_16"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_56">
+
+            <EditText
+                android:id="@+id/questioncreate_tulispesan"
+                android:paddingStart="@dimen/space_16"
+                android:hint="Tulis Pesan"
+                android:inputType="text"
+                android:layout_toStartOf="@+id/btn_send"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/border_recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_48"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_margin="@dimen/space_2"
+                android:layout_alignTop="@+id/questioncreate_tulispesan"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/btn_send"
+                android:src="@drawable/ic_tombol_kirim"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="@dimen/space_40" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginVertical="@dimen/space_8"
+        android:layout_marginHorizontal="@dimen/space_8"
+        android:elevation="@dimen/space_8"
+        android:id="@+id/c_cv"
+        app:cardCornerRadius="@dimen/space_8"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <RelativeLayout
+            android:paddingHorizontal="@dimen/space_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginStart="@dimen/space_8"
+                android:layout_toEndOf="@id/bullet"
+                android:id="@+id/closed_payment"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="@color/birutua"
+                android:layout_marginTop="@dimen/space_4"
+                android:textSize="@dimen/font_title_size"
+                android:text="Pembayaran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/bullet"
+                android:layout_marginTop="@dimen/space_8"
+                android:src="@drawable/ic_baseline_brightness_1_24"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space_16"/>
+
+            <TableRow
+                android:background="@color/md_brown_100"
+                android:layout_marginTop="@dimen/space_8"
+                android:layout_below="@+id/bullet"
+                android:layout_height="0.1dp"
+                android:layout_width="match_parent"/>
+
+            <TextView
+                android:id="@+id/list_pembayarantext"
+                android:textColor="@color/birutua"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="@dimen/font_h6_size"
+                android:layout_marginStart="@dimen/space_32"
+                android:layout_centerInParent="true"
+                android:text="Pembayaran Uang Semester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/listtgle"
+                android:layout_alignStart="@id/list_pembayarantext"
+                android:layout_marginBottom="@dimen/space_4"
+                android:layout_below="@+id/list_pembayarantext"
+                android:text="Tanggal :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_toRightOf="@+id/listtgle"
+                android:layout_marginHorizontal="@dimen/space_4"
+                android:id="@+id/list_pembayaran_tgl"
+                android:layout_marginBottom="@dimen/space_4"
+                android:layout_below="@+id/list_pembayarantext"
+                android:text="20 september 2020"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

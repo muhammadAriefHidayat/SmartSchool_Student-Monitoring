@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ProfilActivity">
+
+    <RelativeLayout
+        android:id="@+id/relaitv"
+        android:background="@color/biruMuda"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"/>
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_below="@+id/relaitv"
+        android:src="@drawable/garis"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_32"/>
+
+    <RelativeLayout
+        android:id="@+id/profil_profilname"
+        android:paddingHorizontal="@dimen/space_16"
+        android:layout_width="match_parent"
+        android:layout_height="132dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profil_userimage"
+            android:layout_marginTop="@dimen/space_16"
+            android:src="@drawable/kind"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:layout_marginStart="@dimen/space_16"
+            android:layout_marginTop="@dimen/space_16"
+            android:layout_alignTop="@id/profil_userimage"
+            android:layout_toEndOf="@id/profil_userimage"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/font_h6_size"
+            android:fontFamily="@font/nunito_bold"
+            android:text="RAHMAT GOINIVER"
+            android:id="@+id/profil_Nametxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginStart="@dimen/space_16"
+            android:layout_below="@id/profil_Nametxt"
+            android:layout_toEndOf="@id/profil_userimage"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/font_title_size"
+            android:text="Class: 6A"
+            android:id="@+id/profil_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@id/profil_profilname"
+        android:paddingHorizontal="@dimen/space_16"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="@color/birutua"
+            android:id="@+id/profil_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Information"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="@dimen/font_h5_size"/>
+
+        <TableRow
+            android:background="@color/pink"
+            android:layout_below="@id/profil_information"
+            android:layout_width="@dimen/space_76"
+            android:layout_height="@dimen/space_2"/>
+
+        <TextView
+            android:id="@+id/profil_grade"
+            android:layout_marginTop="@dimen/space_16"
+            android:layout_below="@+id/profil_information"
+            android:text="Class"
+            android:fontFamily="@font/nunito_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/profil_gradeValue"
+            android:layout_marginTop="@dimen/space_2"
+            android:layout_below="@+id/profil_grade"
+            android:text="6th Grade"
+            android:textColor="@color/tulisanHitam"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/profil_gender"
+            android:layout_marginTop="@dimen/space_16"
+            android:layout_below="@+id/profil_information"
+            android:text="Gender"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/nunito_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/profil_genderValue"
+            android:layout_alignStart="@id/profil_gender"
+            android:layout_marginTop="@dimen/space_2"
+            android:layout_below="@+id/profil_grade"
+            android:text="Female"
+            android:textColor="@color/tulisanHitam"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/profil_phone"
+            android:layout_marginTop="@dimen/space_12"
+            android:layout_below="@+id/profil_genderValue"
+            android:text="phone"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/nunito_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/profil_phoneValue"
+            android:layout_alignStart="@id/profil_gender"
+            android:layout_marginTop="@dimen/space_2"
+            android:layout_below="@+id/profil_phone"
+            android:text="085809280698"
+            android:textColor="@color/tulisanHitam"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/profil_birthdate"
+            android:layout_marginTop="@dimen/space_12"
+            android:layout_below="@+id/profil_gradeValue"
+            android:text="Birth Date"
+            android:fontFamily="@font/nunito_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/profil_birthdateValue"
+            android:layout_marginTop="@dimen/space_2"
+            android:layout_below="@+id/profil_birthdate"
+            android:text="17 September 2020"
+            android:textColor="@color/tulisanHitam"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/profil_email"
+            android:layout_marginTop="@dimen/space_12"
+            android:layout_below="@+id/profil_birthdateValue"
+            android:text="Email"
+            android:fontFamily="@font/nunito_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/profil_emailValue"
+            android:layout_marginTop="@dimen/space_2"
+            android:layout_below="@+id/profil_email"
+            android:text="rahmatGuiniviewer@gmail.com"
+            android:textColor="@color/tulisanHitam"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/profil_address"
+            android:layout_marginTop="@dimen/space_12"
+            android:layout_below="@+id/profil_emailValue"
+            android:text="Address"
+            android:fontFamily="@font/nunito_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/profil_addressValue"
+            android:layout_marginTop="@dimen/space_2"
+            android:layout_marginEnd="@dimen/space_64"
+            android:layout_below="@+id/profil_address"
+            android:text="Jl Kartini Tanjung Kareng Pusat No16, Palapa Bandar Lampung - Lampung"
+            android:textColor="@color/tulisanHitam"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/birutua"
+            android:layout_marginTop="@dimen/space_20"
+            android:layout_below="@+id/profil_addressValue"
+            android:id="@+id/profil_Parents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parents"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="@dimen/font_h5_size"/>
+
+        <TableRow
+            android:background="@color/pink"
+            android:layout_below="@id/profil_Parents"
+            android:layout_width="@dimen/space_76"
+            android:layout_height="@dimen/space_2"/>
+
+        <TextView
+            android:id="@+id/profil_parentname"
+            android:text="name"
+            android:layout_marginTop="@dimen/space_16"
+            android:layout_below="@id/profil_Parents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/profil_parentnameValue"
+            android:layout_marginTop="@dimen/space_2"
+            android:layout_below="@+id/profil_parentname"
+            android:text="Atlas Guin"
+            android:textColor="@color/tulisanHitam"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/profil_parentemail"
+            android:layout_marginTop="@dimen/space_12"
+            android:layout_below="@+id/profil_parentnameValue"
+            android:text="Email"
+            android:fontFamily="@font/nunito_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/profil_parentemailValue"
+            android:layout_marginTop="@dimen/space_2"
+            android:layout_below="@+id/profil_parentemail"
+            android:text="bapakGuiniviewer@gmail.com"
+            android:textColor="@color/tulisanHitam"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/profil_parentphone"
+            android:layout_alignTop="@+id/profil_parentname"
+            android:text="phone"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/nunito_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/profil_parent_pohoneValue"
+            android:layout_alignStart="@id/profil_gender"
+            android:layout_marginTop="@dimen/space_2"
+            android:layout_below="@+id/profil_parentphone"
+            android:text="085809280698"
+            android:textColor="@color/tulisanHitam"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/profil_parentaddress"
+            android:layout_marginTop="@dimen/space_12"
+            android:layout_below="@+id/profil_parentemailValue"
+            android:text="Address"
+            android:fontFamily="@font/nunito_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/profil_parentaddressValue"
+            android:layout_marginTop="@dimen/space_2"
+            android:layout_marginEnd="@dimen/space_64"
+            android:layout_below="@+id/profil_parentaddress"
+            android:text="Jl Kartini Tanjung Kareng Pusat No16, Palapa Bandar Lampung - Lampung"
+            android:textColor="@color/tulisanHitam"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</RelativeLayout>

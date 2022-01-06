@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/space_8"
+    android:background="@color/background_home"
+    android:layout_marginBottom="@dimen/space_16">
+
+    <TableRow
+        android:layout_marginTop="@dimen/space_4"
+        android:layout_alignTop="@id/list_subject_matapelajaran"
+        android:background="@color/colorPrimary"
+        android:layout_width="@dimen/space_2"
+        android:layout_height="@dimen/space_40"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/space_2"
+        android:textColor="@color/tulisanHitam"
+        android:textStyle="bold"
+        android:id="@+id/list_subject_matapelajaran"
+        android:textSize="@dimen/font_h7_size"
+        android:layout_marginHorizontal="@dimen/space_24"
+        android:layout_toEndOf="@+id/list_home_image"
+        android:text="MateMatika"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/list_subject_jadwal"
+        android:layout_marginTop="@dimen/space_4"
+        android:layout_marginBottom="@dimen/space_8"
+        android:layout_below="@id/list_subject_matapelajaran"
+        android:textSize="12sp"
+        android:layout_marginHorizontal="@dimen/space_24"
+        android:layout_toEndOf="@+id/list_home_image"
+        android:text="07.00 - 09.00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TableRow
+        android:layout_marginTop="@dimen/space_8"
+        android:background="@color/md_brown_200"
+        android:layout_below="@id/list_subject_jadwal"
+        android:layout_height="0.1dp"
+        android:layout_width="match_parent"/>
+
+</RelativeLayout>

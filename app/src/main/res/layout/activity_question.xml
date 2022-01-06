@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/biruMuda"
+    tools:context=".activity.QuestionActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_question"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/toolbar_question"
+        android:layout_marginTop="@dimen/space_16"
+        android:layout_marginBottom="@dimen/space_32"
+        android:layout_marginHorizontal="@dimen/space_20"
+        android:id="@+id/cardview_question"
+        app:cardCornerRadius="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_52">
+
+        <RelativeLayout
+            android:paddingHorizontal="@dimen/space_32"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/ninini"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="@color/birutua"
+                android:layout_marginTop="@dimen/space_4"
+                android:textSize="@dimen/font_title_size"
+                android:layout_centerVertical="true"
+                android:text="Create New"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/question_addnew"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_add_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_below="@+id/toolbar_question"
+        android:paddingTop="@dimen/space_56"
+        android:layout_marginTop="@dimen/space_48"
+        android:paddingHorizontal="@dimen/space_20"
+        android:background="@drawable/bakcground_top_round"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </View>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_below="@+id/cardview_question"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleview_forumlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/queestion_progressbar"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

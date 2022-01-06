@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/biruMuda"
+    tools:context=".activity.SubjectActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_subject"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"/>
+
+    <View
+        android:id="@+id/subject_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_84"
+        android:background="@drawable/bakcground_top_round"
+        android:padding="@dimen/space_32"
+        android:paddingTop="@dimen/space_32">
+    </View>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/space_64"
+        android:layout_marginBottom="@dimen/space_32"
+        android:layout_marginHorizontal="@dimen/space_32"
+        android:id="@+id/subject_cv"
+        app:cardCornerRadius="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_52">
+
+        <LinearLayout
+            android:paddingHorizontal="@dimen/space_16"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/subject_monday"
+                android:gravity="center_horizontal"
+                android:textColor="@color/tulisanHitam"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="@dimen/font_title_size"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mon"/>
+
+            <TextView
+                android:id="@+id/subject_tues"
+                android:gravity="center_horizontal"
+                android:textColor="@color/tulisanHitam"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="@dimen/font_title_size"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Tue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/subject_wed"
+                android:gravity="center_horizontal"
+                android:textColor="@color/tulisanHitam"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="@dimen/font_title_size"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Wed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/subject_thu"
+                android:gravity="center"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="@dimen/font_title_size"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/tulisanHitam"
+                android:layout_weight="1"
+                android:text="thu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/subject_fri"
+                android:gravity="center_horizontal"
+                android:textColor="@color/tulisanHitam"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="@dimen/font_title_size"
+                android:layout_gravity="center_vertical"
+                android:text="fri"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/subject_sat"
+                android:gravity="center_horizontal"
+                android:textColor="@color/tulisanHitam"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="@dimen/font_title_size"
+                android:layout_gravity="center_vertical"
+                android:text="Sat"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/frame_subject"
+        android:paddingTop="@dimen/space_32"
+        android:layout_marginTop="@dimen/space_100"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

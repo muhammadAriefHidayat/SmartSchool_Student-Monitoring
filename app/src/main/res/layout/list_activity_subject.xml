@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/space_8"
+    android:layout_marginBottom="@dimen/space_16"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <TableRow
+                android:background="@color/pink"
+                android:layout_width="@dimen/space_2"
+                android:layout_height="@dimen/space_40"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/space_2"
+                android:id="@+id/list_subject_matapelajaran"
+                android:textSize="@dimen/font_h7_size"
+                android:layout_marginHorizontal="@dimen/space_16"
+                android:layout_toEndOf="@+id/list_home_image"
+                android:text="Judul ini adalah hari ini hari selasa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/list_subject_jadwal"
+                android:layout_marginTop="@dimen/space_2"
+                android:layout_marginBottom="@dimen/space_8"
+                android:layout_below="@id/list_subject_matapelajaran"
+                android:textSize="12sp"
+                android:layout_marginHorizontal="@dimen/space_16"
+                android:layout_toEndOf="@+id/list_home_image"
+                android:text="Selasa, 29 oktober 2020"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TableRow
+                android:background="@color/md_brown_300"
+                android:layout_below="@id/list_subject_jadwal"
+                android:layout_height="@dimen/space_1"
+                android:layout_width="match_parent"/>
+
+</RelativeLayout>

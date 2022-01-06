@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1062313110374",
+    "firebase_url": "https://palm-kids-f1ea3.firebaseio.com",
+    "project_id": "palm-kids-f1ea3",
+    "storage_bucket": "palm-kids-f1ea3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062313110374:android:2061855801d0488d15f6a7",
+        "android_client_info": {
+          "package_name": "com.gink.palmkids"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062313110374-gee22bq6i2g4qskarqr3cbvi37bjq9su.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gink.palmkids",
+            "certificate_hash": "973751f8a2450c7aecc644c5ad84b03c0d0a88af"
+          }
+        },
+        {
+          "client_id": "1062313110374-fboeldo7dplt2vbf8chjig4mmi8g6ecl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyDiF5afS4J3aL4dXWDPsy8pzsJ49scr0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1062313110374-fboeldo7dplt2vbf8chjig4mmi8g6ecl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
